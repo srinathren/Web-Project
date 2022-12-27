@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="len.png" alt="" class="len">
+    <img src="idpd.png" alt="" class="idpd">
+    <div class="main">
+        <nav>
+            <!-- <div class="links">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </div> -->
+        </nav>
+        <div class="info">
+            <div class="logo">
+                <img src="len.png" alt="Logo">
+                <h2>Lenevo Ideapad Note 3</h2>
+            </div>
+            <div class="overlay"></div>
+            <img src="lap.png" alt="Laptopimage" class="lappic" >
+            <div id="circle">
+                <div class="feat one">
+                    <img src="display.png" alt="">
+                    <div>
+                        <h1>Display</h1>
+                        <p>15.6" Full HD</p>
+                    </div>
+                </div>
+                <div class="feat two">
+                    <img src="chip.png" alt="">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>5th Gen AMD Ryzen 5-5500U</p>
+                    </div>
+                </div>
+                <div class="feat three">
+                    <img src="graph.png" alt="">
+                    <div>
+                        <h1>Graphics</h1>
+                        <p>Integrated AMD Radeon Graphics</p>
+                    </div>
+                </div>
+                <div class="feat four">
+                    <img src="str.png" alt="">
+                    <div>
+                        <h1>Memory and Storage</h1>
+                        <p>8GB RAM DDR4-3200 | 512GB SSD</p>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <img src="arrow.png" alt="arrowup" id="upbt">
+            <h3>Features</h3>
+            <img src="arrow.png" alt="arrowdown" id="dwbt">
+            
+        </div>        
+    </div>
+
+    <script>
+        var cr = document.getElementById("circle");
+        var upbt = document.getElementById("upbt");
+        var dwbt = document.getElementById("dwbt");
+
+        var rotval = circle.style.transform;
+        var rotsum;
+
+        upbt.onclick = function(){
+            rotsum = rotval+"rotate(-90deg)";
+            circle.style.transform = rotsum;
+            rotval = rotsum;
+        }
+
+        dwbt.onclick = function(){
+            rotsum = rotval+"rotate(90deg)";
+            circle.style.transform = rotsum;
+            rotval = rotsum;
+        }
+
+    </script>
+    
+
+</body>
+</html>
