@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="D:\sri\web proj\legion5\style.css">
+</head>
+<body>
+    <img src="D://sri//web proj//len.png" alt="" class="len">
+    <img src="D:\sri\web proj\legion5\logo.png" alt="" class="idpd">
+    <div class="main">
+        <nav>
+            <!-- <div class="links">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </div> -->
+        </nav>
+        <div class="info">
+            <div class="logo">
+                <img src="D://sri//web proj//len.png" alt="Logo">
+                <h2>Lenevo Ideapad Note 3</h2>
+            </div>
+            <div class="overlay"></div>
+            <img src="D:\sri\web proj\legion5\lgwhite.png" alt="Laptopimage" class="lappic" >
+            <div id="circle">
+                <div class="feat one">
+                    <img src="D://sri//web proj//display.png" alt="">
+                    <div>
+                        <h1>Display</h1>
+                        <p>39.62cms (15.6) FHD (1920 x 1080)</p>
+                    </div>
+                </div>
+                <div class="feat two">
+                    <img src="D://sri//web proj//chip.png" alt="">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>AMD Ryzen™ 7 5800H</p>
+                    </div>
+                </div>
+                <div class="feat three">
+                    <img src="D://sri//web proj//graph.png" alt="">
+                    <div>
+                        <h1>Graphics</h1>
+                        <p>NVIDIA GeForce® RTX™ 3060 6GB GDDR6</p>
+                    </div>
+                </div>
+                <div class="feat four">
+                    <img src="D://sri//web proj//str.png" alt="">
+                    <div>
+                        <h1>Memory and Storage</h1>
+                        <p>16 GB SO-DIMM DDR4 3200MHz | 512GB SSD</p>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <img src="D://sri//web proj//images//arrow.png" alt="arrowup" id="upbt">
+            <h3>Features</h3>
+            <img src="D://sri//web proj//images//arrow.png" alt="arrowdown" id="dwbt">
+        </div>        
+    </div>
+
+    <script>
+        var cr = document.getElementById("circle");
+        var upbt = document.getElementById("upbt");
+        var dwbt = document.getElementById("dwbt");
+
+        var rotval = circle.style.transform;
+        var rotsum;
+
+        upbt.onclick = function(){
+            rotsum = rotval+"rotate(-90deg)";
+            circle.style.transform = rotsum;
+            rotval = rotsum;
+        }
+
+        dwbt.onclick = function(){
+            rotsum = rotval+"rotate(90deg)";
+            circle.style.transform = rotsum;
+            rotval = rotsum;
+        }
+
+    </script>
+    
+
+</body>
+</html>
